@@ -1,0 +1,12 @@
+{
+  "name": "nodejs_ejs-study",
+  "version": "1.0.0",
+  "description": "- Let's learn to work with EJS files     - A templating language for creating HTML pages using JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
