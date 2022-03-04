@@ -82,3 +82,30 @@
 *6.Let's Code*
     * Application struture with html
     * Styling with css
+
+*7.Let's see what we'll see next week?* 
+
+## Task 02: Attend the courses/classes
+   ### Revision
+   * HTML
+     [] The stellar html guide
+     [] HTML that makes sense to everyone
+   
+   * CSS
+     [] The stellar guide to css
+     [] Not everything is pixels
+     [] One box inside the other
+     [] Beautiful app even in the text
+
+   * HTTP stellar guide
+     [] Understanding
+     [] Overview
+     [] Visualizing communication.
+     [] Concepts (With the exception of the proxies class)
+     [] URI (With the exception of the URN class)
+    
+   ### Preparation for the next class
+   * HTML
+     [] I can see and hear the HTML
+     [] Forms from another planet
+     [] Not just classes or ID's
