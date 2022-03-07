@@ -109,3 +109,68 @@
      [] I can see and hear the HTML
      [] Forms from another planet
      [] Not just classes or ID's
+
+
+# Class 02
+## What are we going to see today?
+
+     __HTML + CSS completion__
+
+    [] Images
+    [] Acessibility
+    [] Layout of elements on the page
+    [] Responsiveness
+    [] Data registration form
+    [] Modal
+    [] A pinch of JavaScript
+
+## Sticky notes
+    * The claass will be recorded
+    * Continuation of the previous class
+    * Our team will be in the community to answer questions 
+    and let you know about everything
+
+### What is the purpose of this marathon?
+    * Organization and study
+    * Platform and community
+    * Dev mentality
+    * Practice discover technologies
+
+### What will you gain from this?
+    * Pratical clarity
+    * Understanding of the platform and community
+    * Project applying discover concepts
+    * Necessery bases to continue your journey
+
+### What happened in the first class?
+    __Soft Skills__
+    * What is a programmer person
+    * Opportunities and market
+    * Organization and study
+    * Focus, location, active learning, reviews, research
+    * We browse the platform
+    * Tips on how to follow the classes
+    * Mentality
+    * Time, rest, persistence, imposter syndrome
+    * Do you like what you're doing?
+    
+    __Hard Skills__
+    * HTML
+        - Base structure
+        - Semantic tags
+    * CSS
+        - Box Models
+        - Fonts and colors
+        - Selectors, values, classes and IDs
+    
+
+## Let's Code !
+### Task 03: Attend the courses/classes
+### Revision
+    * HTML
+        - I caan see and hear the HTML
+        - Forms from another planet
+    * CSS
+        - Not just classes or IDs
+### To follow the next class
+    * The stellar javascript guide
