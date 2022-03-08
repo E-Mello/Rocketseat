@@ -174,3 +174,54 @@
         - Not just classes or IDs
 ### To follow the next class
     * The stellar javascript guide
+
+
+# Class 03!
+## Whats are we going to see today?
+    __JavaScript__
+    * Objects
+    * Data types and structure
+    * If/Else
+    * Errors
+    * Functionalities
+    * Add and remove transactions
+    * Calculate
+    * Save to LocalStorage
+## Sticky notes
+    * The class will be recorded
+    * Other classes are avilable
+    * This is a continuation of the laast class
+    * Our team will be in the community to answer questions and let you know about everything
+
+### What is the purpose of this marathon?
+    * Orgaaniztion and study
+    * Platform and community
+    * Dev mentality
+    * Practice the technologies of discover course
+
+### Whats will you gain from this
+    * Clarity and practice
+    * Platform and community understanding
+    * Project applying discover concepts
+    * Necessary bases to continue your journey
+    
+### What happened so far?
+    * Soft Skills
+        - What is being a programmer person?
+        - Opportunity and market
+        - Organization and study
+        - Focus, location, active learning, reviews, research
+        - We browse the platform
+        - Tips on how follow the classes
+        - Mentality
+        - Time, rest, persistence, imposter syndrome
+        - Do you like what you're doing?
+    
+    * Hard Skills
+        - HTML and CSS to make the appliction complete
+        - Pinch in JaavaScript
+
+## Let's Code !
+
+## Task 04: Attend the courses/classes
+### Revision
