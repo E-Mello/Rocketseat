@@ -161,7 +161,7 @@ header {
 
 #transaction {
     overflow-x: auto;
-    display: block;
+    display: grid;
     width: 100%;
 }
 

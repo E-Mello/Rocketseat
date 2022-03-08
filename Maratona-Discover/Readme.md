@@ -225,3 +225,47 @@
 
 ## Task 04: Attend the courses/classes
 ### Revision
+    * The stellar JavaScript guide
+
+### Watch
+    * The star guide to GIT
+    * GitHub's stellar guide
+    * Flying with the DOM
+
+### Put the final code on GitHub
+
+
+# Discover Marathon - Class 04 !
+## What are we going to see?
+    * Hard Skills what you need to learn to be professionally ready
+    * Soft Skills you need to train to continue the marathon to the finish line
+    * 2021 for front-end devs
+    * Build a professional experience, even without being hired
+    * Estimated time to reap results
+    * Formula for you mensure your study time to get closer the results
+
+##  What you get with it?
+    * Future perspective
+    * The next steps to follow
+    * Better mensure your results
+
+##  Advantages of being a Front-End Dev
+    * Vacancies
+    * Salaries [https://www.salario.com.br/profissao/programador-front-end-cbo-317110/]
+    * Much of the application resides on the front-end
+    * Slightly smoother to start than the back-end (The fuller domain is challenging though)
+    * Can be fun: design, code, colors, typography, user experience, serveless, tools, frameworks...
+
+##  Challenges
+    * Many tools to decide
+    * Too many frameworks to confuse
+    * Paradigms and patterns to study
+    * Keep studying, because changes happen very fast
+
+##  Let's align the expectation
+    * You may **not be ready** in two months
+    * If you have the rope around your neck, you may be disappointed
+    * If you accelerate too much, you will overturn
+    * You will need to focus to get there!
+    * You will get there, but it will depend on the formula of [ Time x Effort]
+    * 
