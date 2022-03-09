@@ -268,4 +268,74 @@
     * If you accelerate too much, you will overturn
     * You will need to focus to get there!
     * You will get there, but it will depend on the formula of [ Time x Effort]
-    * 
+ 
+    > Already prepare your Linkedin
+        - Professional profile
+        - Photograph
+        - Put what you are studying
+        - Skills
+        - Share good things
+        - Avoid discussions (they do not bring benefit)
+        - Want to help people and not criticize
+        - Present solutions, not problems
+
+## Time investment (Hard Skills)
+### Instrumental english
+    * Constant time investment
+    * Glossary
+    * Is it possible to continue without English?
+        - Yes, but it will be much more challenging.
+    * Should i take an english course?
+        - If it's in your budget
+
+### Understand the fundamentals of programming: 20h
+    - Area overview
+    - The science behind computing
+    - How the web and the internet work
+    - Algorithms
+    - Data structure
+    - Programming logic
+    - Client and Server
+    - HTTP
+
+    > Practically reading and research
+    > Algorithms, data strutures and logic is best assimilated with practice
+
+### HTML e CSS: 100h
+    * Understand the fundamentals (Discover)
+    * 20% studying 80% practicing
+    * How to practicing ?
+    * Micro activities
+        1. Choose a site tht you like a lot
+        2. Try to replicate only one component at a time
+        3. Create three variations of that component
+        4. Repeat...
+            - Example of components
+                - Navbar, buttons, forms, headers, footers, articles, cards, modaals
+    * Macro activities
+        1. Create 5-10, mini sites (one page, multiple pages)
+        2. Transform figma, dribble and behance layouts
+    * Don't think, code!
+    * Information is food, you eat what you need to perform better
+    * Beware of information obesity
+    * Act more! Code more!
+    * Most of this time is in CSS
+    * Building something once is not enough
+    * Repetition is the key that will open the mental doors of understanding
+    * Connect your antennas to the design
+    * Where to get more content?
+        - MDN documentation
+        - CSS Tricks
+        - Codepen
+        - Google, youtube
+
+### Git, GitHub, Command Line: 10h
+    Fundamentals needed to control the history of your code
+
+    Find Familiarity with the terminal
+
+    Coming soon more content on discover
+
+    * Already prepare your student/professional GitHub        
+    * It will be your portfolio
+    * It will show your progress and your constancy
