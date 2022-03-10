@@ -1,3 +1,7 @@
+import './styles/global.css'
+
 export function App(){
-    return <h1>Hello World! v2.0</h1>
+    throw new Error('Eita Giovana, o forninho caiu!');
+
+    return <h1>Hello World</h1>
 }
