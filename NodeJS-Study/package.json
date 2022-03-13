@@ -15,6 +15,6 @@
     "license": "ISC",
     "dependencies": {
         "cfonts": "^2.10.0",
-        "moment": "^1.5.1"
+        "moment": "^2.19.3"
     }
 }
