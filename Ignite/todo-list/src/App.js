@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './styles/App.css';
 import TodoList from './components/ToDoList.js'
 import 'bootstrap/dist/css/bootstrap.min.css'
