@@ -25,7 +25,7 @@ export function TaskList() {
 
       const idRandom = (num: number) =>  Math.floor(Math.random() * num);
 
-      const newTask = {id: idRandom(1000), title: newTaskTitle}
+      const newTask = {id: idRandom(1000), title: newTaskTitle, isComplete: false}
       
       setTasks([...tasks, newTask])
   
@@ -48,6 +48,20 @@ export function TaskList() {
   }
 
   const handleToggleTaskCompletion = (id: number) => {
+    
+    
+    let newTasks = tasks.map((task) => {
+      if(task.id === id){
+        task.isComplete = !task.isComplete;
+      }
+      return task;
+    });
+    console.log(newTasks);
+
+    setTasks(newTasks);
+
+    //console.log(newTask);
+    
     // Altere entre `true` ou `false` o campo `isComplete` de uma task com dado ID
       // const input = $('inputName')[0];
   

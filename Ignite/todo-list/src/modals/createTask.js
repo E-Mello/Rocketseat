@@ -1,51 +1,97 @@
 import {useState} from 'react';
-import {Button, Modal, ModalHeader, ModalBody, ModalFooter, Form, FormGroup, Input, Label} from 'reactstrap';
+import React from 'react';
+import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
 const CreateTaskPopup = ({modal, toggle, save}) => {
     const {taskName, setTaskName} = useState('');
     const {description, setDescription} = useState('');
 
-   /* const handleChange = (e) => {
-        const name = e.target.value;
-        const value = e.target.value;        
-                
-        if(name === "taskName"){
-            setTaskName(name)
-        }else{
-            setDescription(value)
-        }
+    // const handleChange = (event) => {
+    //     let value = event.target.value;
+    //     let name = event.target.name;
+      
+    //     setTaskName((prevalue) => {
+    //       return {
+    //         ...prevalue,   // Spread Operator               
+    //         [name]: value
+    //       }
+    //     })
+    //     setDescription((prevalue) => {
+    //         return {
+    //             ...prevalue, // Spread Operator
+    //             [name]: value
+    //         }
+    //     })
+    //   }
 
-    }*/
+    //    function handleChange(e) {
+//     setTaskName(e.target.value);
+
+//     }
+    // const handleChange = (event) => {
+        
+    //     // const {name,value} = e.target.value;
+
+    //     console.log(event.target.value);
+
+    //     setTaskName(event.target.value);
+
+    // }
+
+    // let input = document.querySelector('input');
+    // let log = document.getElementById('log');
+
+    // input.oninput = handleInput;
+
+    // function handleChange(e) {
+    // log.textContent = `The field's value is
+    //   ${e.target.value.length} character(s) long.`;
+    // }
+
+    const handleChange = (event) =>{ 
+        // const {name, value} = e.target;
+
+        this.setState({
+            [event.target.setTaskName] : event.target.value
+        })
+        this.setState({
+            [event.target.setDescription] : event.target.value
+        })
+    }
+
 
     const handleSave = () => {
         let taskObj = {}
-        taskObj["Name"] = {taskName}
-        taskObj["Description"] = {description}
-        //save(taskObj)
+        taskObj["Name"] = taskName
+        taskObj["Description"] = description
+        save(taskObj)   
     }
 
     return (
-        <Modal isOpen={modal} toggle={toggle}>
+        //onChange={e => setTaskName(e.target.value)}
+        <>
+      <Modal isOpen={modal} toggle={toggle}>
             <ModalHeader toggle={toggle}>Modal Title</ModalHeader>  
             <ModalBody>
-                <Form className="form">
-                    <FormGroup>
+                <form className="form">
+                
                         <div className="form-group">
-                            <Label>Task Name</Label>
-                            <Input type="text" className="form-control" value={taskName} onInput={e => setTaskName(e.target.value)} name="taskName"></Input>
+                            <label>Task Name</label>
+                            <input type="text" className="form-control" value={taskName} onChange={handleChange} name="taskName"></input>
                         </div>
                         <div className="form-group">
-                            <Label>Description</Label>
-                            <textarea rows="5" className="form-control" value={description} onInput={e => setDescription(e.target.value)} name="description"></textarea>
+                            <label>Description</label>
+                            <textarea rows="5" className="form-control" value={description} onChange={handleChange} name="description"></textarea>
                         </div>
-                    </FormGroup>
-                </Form>
+                    
+                </form>
             </ModalBody>
             <ModalFooter>
-                <Button color="primary"  onClick={handleSave}>Create</Button>
+                <Button color="primary"  onClick={handleSave}>Create</Button>{' '}
                 <Button color="secondary" onClick={toggle}>Cancel</Button>
             </ModalFooter>
         </Modal>
+        </>
     );
 };
 
