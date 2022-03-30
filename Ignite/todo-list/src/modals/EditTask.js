@@ -1,8 +1,8 @@
-import {useState} from 'react';
+import {useState, useEffect} from 'react';
 import React from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
-const CreateTaskPopup = ({modal, toggle, save}) => {
+const EditTaskPopup = ({modal, toggle, updateTask, taskObj}) => {
     const [taskName, setTaskName] = useState('');
     const [description, setDescription] = useState('');
 
@@ -16,22 +16,25 @@ const CreateTaskPopup = ({modal, toggle, save}) => {
         }
     }
 
+    useEffect(() => {
+        setTaskName(taskObj.Name)
+        setDescription(taskObj.Description)
+    },[])
 
-    const handleSave = () => {
-        let taskObj = {}
-        taskObj["Name"] = taskName;
-        taskObj["Description"] = description;
-        save(taskObj)
-        // let clean = null
-        // setTaskName(clean)
-        // setDescription(clean)
+
+    const handleUpdate = (e) => {
+        e.preventDefault()
+        let tempObj = {}
+        tempObj['Name'] = taskName
+        tempObj['Description'] = description
+        updateTask(tempObj)
     }
 
     return (
         //onChange={e => setTaskName(e.target.value)}
         <>
       <Modal isOpen={modal} toggle={toggle}>
-            <ModalHeader toggle={toggle}>Create Task</ModalHeader>  
+            <ModalHeader toggle={toggle}>Update Task</ModalHeader>  
             <ModalBody>
                 <form className="form">
                 
@@ -47,7 +50,7 @@ const CreateTaskPopup = ({modal, toggle, save}) => {
                 </form>
             </ModalBody>
             <ModalFooter>
-                <Button color="primary"  onClick={handleSave}>Create</Button>{' '}
+                <Button color="primary"  onClick={handleUpdate}>Update</Button>{' '}
                 <Button color="secondary" onClick={toggle}>Cancel</Button>
             </ModalFooter>
         </Modal>
@@ -55,4 +58,4 @@ const CreateTaskPopup = ({modal, toggle, save}) => {
     );
 };
 
-export default CreateTaskPopup;
+export default EditTaskPopup;
