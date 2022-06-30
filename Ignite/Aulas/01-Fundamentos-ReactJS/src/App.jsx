@@ -1,8 +1,10 @@
 // JSX = JavaScript + XML
 import {Post} from './Post';
 import { Header} from './components/Header';
-import './global.css'
 
+import './global.css'
+import styles from './App.module.css'
+import { Sidebar } from './components/Sidebar';
 
 
 export function App() {
@@ -10,14 +12,19 @@ export function App() {
       <div>
         <Header />
 
-        <Post  
-          author="Edio Mello"
-          content="Lorem ipsum dolor sit amet, consectetur adipiscing el"
-        />
-        <Post
-          author="Mello"
-          content="Eu Sou divertido"
-        />
+        <div className={styles.wrapper}>
+          <Sidebar />
+            <main>
+              <Post  
+                  author="Edio Mello"
+                  content="Lorem ipsum dolor sit amet, consectetur adipiscing el"
+                />
+              <Post
+                  author="Mello"
+                  content="Eu Sou divertido"
+              />
+            </main>
+        </div>
     </div>
   )
 }
