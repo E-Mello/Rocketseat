@@ -1,12 +1,30 @@
 import {format, formatDistanceToNow} from 'date-fns';
 import ptBR from 'date-fns/locale/pt-BR';
-import { useState } from 'react';
+import { FormEvent, ChangeEvent, useState, InvalidEvent } from 'react';
 
 import { Avatar } from './Avatar'
 import { Comment } from './Comment'
 
 
 import styles from './Post.module.css'
+
+interface Content {
+    type: 'paragraph' | 'link';
+    content: string;
+}
+
+interface Author {
+    name: string;
+    role: string;
+    avatarUrl: string;
+}
+
+interface PostProps {
+    author: Author;
+    publishedAt: Date;
+    content: Content[];
+
+}
 
 // const publishedDateFormatted = new Intl.DateTimeFormat('pt-BR', {
 //     day: '2-digit' ,
@@ -15,14 +33,9 @@ import styles from './Post.module.css'
 //     minute: '2-digit',
 //     second: '2-digit'
 //  }).format(publishedAt)
-
-const comments = [
-
-];
-
 // estado = variaveis que eu quero que o componente monitore
 
-export function Post({author, publishedAt, content}){
+export function Post({author, publishedAt, content}: PostProps){
     const [comments, setComments] = useState([
         'Post muito bacana, hein?!'
     ])
@@ -38,23 +51,24 @@ export function Post({author, publishedAt, content}){
         addSuffix: true,
     })
 
-    function handleCreateNewComment(){
+    //<> generic
+    function handleCreateNewComment(event: FormEvent){
         event.preventDefault();
 
         setComments([...comments, newCommentText]);
         setNewCommentText('');
     }
 
-    function handleNewCommentChange() {
+    function handleNewCommentChange(event: ChangeEvent<HTMLTextAreaElement>) {
         event.target.setCustomValidity('');
         setNewCommentText(event.target.value);
     }
 
-    function handleNewCommentInvalid() {
+    function handleNewCommentInvalid(event: InvalidEvent<HTMLTextAreaElement>) {
         event.target.setCustomValidity('Esse campo e obrigatorio!');
     }
 
-    function deleteComment(commentToDelete) {
+    function deleteComment(commentToDelete: string) {
     // imutabilidade -> as variaveis nao sofrem mutacao,
     // nos criamos um novo valor (um novo espaco na memoria)
         const commentsWithoutDeletedOne = comments.filter(comment => {
