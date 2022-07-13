@@ -1,4 +1,4 @@
-export function Task() {
+export function Tasks() {
     return (
         <div>
             

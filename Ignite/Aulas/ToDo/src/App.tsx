@@ -1,18 +1,19 @@
 import { Header } from './components/Header';
-import { Sidebar } from './components/Sidebar';
-import { Task } from './components/Task';
+import { NewTask } from './components/NewTask';
+import { Tasks } from './components/Tasks';
 
 import './global.css'
 import styles from './App.module.css'
+
 
 export function App() {
   return (
     <div>
       <Header />
       
-      <Sidebar />
+      <NewTask />
       <main>
-        <Task />
+        <Tasks />
       </main>
     </div>
   )

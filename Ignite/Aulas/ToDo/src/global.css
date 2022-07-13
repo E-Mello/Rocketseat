@@ -14,3 +14,22 @@
     --purple-dark: #5E60CE;
     --purple: #8284FA;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    background: var(--gray-600);
+    
+}
+
+body, input{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--gray-200);
+}
