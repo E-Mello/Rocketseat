@@ -1,0 +1,53 @@
+.tasks {
+    position: absolute;
+    width: 46rem;
+    height: 17.9375rem;
+    left: calc(50% - 46rem/2);
+    top: 18.1875rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    gap: 1.5rem;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0;
+    gap: 35.0625rem;
+
+    width: 46rem;
+    height: 1.1875rem;
+
+    flex: none;
+    order: 0;
+    align-items: stretch;
+    flex-grow: 0;
+}
+
+.info input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 0.5rem;
+
+    width: 8.6875rem;
+    height: 1.1875rem;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.info button {
+    
+}
+
+.list {
+    
+}
