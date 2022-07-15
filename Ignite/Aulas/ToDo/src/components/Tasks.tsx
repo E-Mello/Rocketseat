@@ -6,12 +6,23 @@ export function Tasks() {
     return (
         <div className={styles.tasks}>
             <div className={styles.info}>
-                <input></input>
-                <button></button>
+                <div className={styles.created}>
+                    <p>Tarefas Criadas</p>
+                    <button className={styles.counter}>
+                        <p>0</p>
+                    </button>
+                </div>
+                <div className={styles.done}>
+                    <p>Concluidas</p>
+                    <button className={styles.counter}>
+                        <p>0</p>
+                    </button>
+                </div>
             </div>
-            <div className={styles.list}>
+            <div className={styles.empty}>
                 <img src={clipboard}></img>
-                <input type="text" name="" id="" />
+                <h3>Voce ainda nao tem tarefas cadastradas</h3>
+                <h4>Crie tarefas e organize seus itens a fazer</h4>
             </div>
         </div>
     )

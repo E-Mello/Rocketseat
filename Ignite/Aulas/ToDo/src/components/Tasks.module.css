@@ -18,18 +18,18 @@
     justify-content: space-between;
     align-items: flex-end;
     padding: 0;
-    gap: 35.0625rem;
+    gap: 0rem;
 
     width: 46rem;
     height: 1.1875rem;
 
     flex: none;
     order: 0;
-    align-items: stretch;
+    align-self: flex-end;
     flex-grow: 0;
 }
 
-.info input {
+.created {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -44,10 +44,115 @@
     flex-grow: 0;
 }
 
-.info button {
-    
+.done {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 0rem;
+
+    width: 6.9375rem;
+    height: 1.1875rem;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
 }
 
-.list {
+
+.info p {
+    width: 6.625rem;
+    height: 1.0625rem;
+
+    font-weight: 700;
+    font-size: 0.875rem;
+    line-height: 1.0625rem;
+
+    color: var(--blue);
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.info button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.125rem 0.5rem;
+    gap: 0.625rem;
+
+    width: 1.5625rem;
+    height: 1.1875rem;
+
+    background: var(--gray-400);
+    border-radius: 62.4375rem;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.info button p {
+    width: 0.5625rem;
+    height: 0.9375rem;
+
+    font-weight: 700;
+    font-size: 0.75rem;
+    line-height: 0.9375rem;
+
+    color: var(--gray-200);
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+
+.empty {
+    box-sizing: border-box;
     
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 1.5rem;
+
+    width: 46rem;
+    height: 15.25rem;
+
+    border-top: 0.0625rem solid var(--gray-400);
+    border-radius: 0.5rem;
+
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.empty img {
+    width: 3.5rem;
+    height: 3.5rem;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;    
+}
+
+.empty h3,h4 {
+    width: 43rem;
+    height: 2.75rem;
+
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 140%;
+    text-align: center;
+
+    color: var(--gray-300);
+
+    /* flex: none; */
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
 }
