@@ -28,8 +28,8 @@ const posts = [
   {
     id: 2,
     author: {
-      avatarUrl: 'https://github.com/quasemago.png',
-      name: 'Quasemago',
+      avatarUrl: 'https://github.com/E-Mello.png',
+      name: 'Edio Mello',
       role: 'Student E-Games'
     },
     content: [

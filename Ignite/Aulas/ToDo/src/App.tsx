@@ -1,6 +1,5 @@
 import { Header } from './components/Header';
-import { NewTask } from './components/NewTask';
-import { Tasks } from './components/Tasks';
+import { TaskList } from './components/TaskList';
 
 import './global.css'
 import styles from './App.module.css'
@@ -11,9 +10,8 @@ export function App() {
     <div>
       <Header />
       
-      <NewTask />
       <main>
-        <Tasks />
+        <TaskList />
       </main>
     </div>
   )
