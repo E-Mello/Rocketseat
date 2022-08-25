@@ -1,17 +1,16 @@
 import styles from './Task.module.css'
 
-import { v4 as uuidv4 } from 'uuid';
+import { v4 as uuidv4,V4Options } from 'uuid';
 import { Trash,ThumbsUp } from 'phosphor-react';
 
 interface TaskItem {
     //npm install uuidv4 (generate unid id)  
-    id: typeof myuuid;
+    id: number ;
     content: string;
-    isComplete: false;
+    isComplete: boolean;
 }
 
-const myuuid = uuidv4();
-
+//const myuuid = uuidv4();
 
 export function Task({content,id,isComplete}: TaskItem) {
 
@@ -19,13 +18,12 @@ export function Task({content,id,isComplete}: TaskItem) {
         console.log('delete');
     }
 
+
+    
+
     return (
         <div className={styles.taskItemList} >
-            <input type="checkbox" className={styles.checkItem}>
-                <label>
-
-                </label>
-            </input>
+            <input type="checkbox"  className={styles.checkItem}/>
             <textarea name="" id=""></textarea>
             <button onClick={handleDeleteTask} className={styles.deleteItem}>
                 <Trash size={24}/>

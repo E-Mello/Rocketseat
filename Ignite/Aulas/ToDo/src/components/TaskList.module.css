@@ -163,7 +163,7 @@
 .empty {
     box-sizing: border-box;
     
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -226,4 +226,9 @@
     order: 1;
     align-self: stretch;
     flex-grow: 0;
+}
+
+.notEmptyDivs {
+    width: 300px;
+    background: white;
 }
