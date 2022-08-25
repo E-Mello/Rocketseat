@@ -14,23 +14,12 @@ export function TaskList() {
         'Write here'
     ])
     const [count, setCount] = useState(0);
-
-    //se o estado for 0 retornar a div vazia, se o estado for > que 0 retornar a div com conteudo
-
-    function handleChangeStateTask() {
-        //return <EmptyTask />
-
-    }
-
-    function handleListTask() {
-
-    }
-
+    
     const todos = [
         {
             id: 1,
             content: 'teste',
-            isComplete: false,
+            isComplete: true,
         },
         {
             id: 2,
@@ -95,7 +84,7 @@ export function TaskList() {
                     </div>
                 </div>
 
-                <div className={styles.empty} >
+                <div className={styles.empty}>
                     <img src={clipboard}></img>
                     <h3>Voce ainda nao tem tarefas cadastradas</h3>
                     <h4>Crie tarefas e organize seus itens a fazer</h4>
