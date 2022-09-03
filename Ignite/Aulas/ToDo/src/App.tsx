@@ -7,13 +7,11 @@ import styles from './App.module.css'
 
 export function App() {
   return (
-    <div>
+    <>
       <Header />
-      
-      <main>
-        <TaskList />
-      </main>
-    </div>
+
+      <TaskList />
+    </>
   )
 }
 
